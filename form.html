@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="headings">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    </div>
+
+    <div class="form-div">
+      <form action="#" id="survey-form" method="POST">
+
+        <div class="personal-details-div">
+          <label for="name" id="name-label" class="block">Name <input class="block full-width" type="text" name="name" id="name" placeholder="Enter your name" required></label>
+          <label for="email" id="email-label" class="block box">Email <input class="block full-width" type="email" name="email" id="email" placeholder="Enter your Email" required></label>
+          <label for="number" id="number-label" class="block box">Age (optional) <input class="block full-width" type="number" name="age" id="number" placeholder="Age" min="13" max="120" pattern="[0-9]+"></label>
+        </div>
+
+        <div class="role-div">
+          <span class="block box full">Which option best describes your current role?</span>
+          <select class="block full-width" name="role" id="dropdown">
+            <option value="select-placeholder">Select current role</option>
+            <option value="select-student">Student</option>
+            <option value="select-full-time-job">Full Time Job</option>
+            <option value="select-full-time-learner">Full Time Learner</option>
+            <option value="select-dont-say">Prefer Not To Say</option>
+            <option value="select-other">Other</option>
+          </select>
+        </div>
+
+        <div class="recommend-radio-div">
+          <span class="block box">Would you recommend freeCodeCamp to a friend?</span>
+          <label class="block" for="recommend-definitely"><input type="radio" name="recommend" id="recommend-definitely" value="recommend-definitely"> Definitely</label>
+          <label class="block" for="recommend-maybe"><input type="radio" name="recommend" id="recommend-maybe" value="recommend-maybe"> Maybe</label>
+          <label class="block" for="recommend-not-sure"><input type="radio" name="recommend" id="recommend-not-sure" value="recommend-not-sure"> Not Sure</label>
+        </div>
+
+
+        <div class="fav-feature-div">
+          <span class="block box">What is your favourite feature of freeCodeCamp?</span>
+          <select class="block full-width" name="fav-feature" id="fav-feature-dropdown">
+            <option value="select-fav-placeholder">Select an option</option>
+            <option value="select-fav-challenges">Challenges</option>
+            <option value="select-fav-projects">Projects</option>
+            <option value="select-fav-community">Community</option>
+            <option value="select-fav-oss">Open Source</option>
+          </select>
+        </div>
+
+        <div class="improvements-div">
+          <span class="block box">What would you like to see improved? (Check all that apply)</span>
+          <label for="check-front-end" class="block"><input type="checkbox" name="check-front-end" id="check-front-end" value="check-front-end"> Front-end Projects</label>
+          <label for="check-back-end" class="block"><input type="checkbox" name="check-back-end" id="check-back-end" value="check-back-end"> Back-end Projects</label>
+          <label for="check-data-vis" class="block"><input type="checkbox" name="check-data-vis" id="check-data-vis" value="check-data-vis"> Data Visualization</label>
+          <label for="check-challenges" class="block"><input type="checkbox" name="check-challenges" id="check-challenges" value="check-challenges"> Challenges</label>
+          <label for="check-oss" class="block"><input type="checkbox" name="check-oss" id="check-oss" value="check-oss"> Open Source Community</label>
+          <label for="check-gitter-help" class="block"><input type="checkbox" name="check-gitter-help" id="check-gitter-help" value="check-gitter-help"> Gitter help roooms</label>
+          <label for="check-vids" class="block"><input type="checkbox" name="check-vids" id="check-vids" value="check-vids"> Videos</label>
+          <label for="check-city-meetups" class="block"><input type="checkbox" name="check-city-meetups" id="check-city-meetups" value="check-city-meetups"> City Meetups</label>
+          <label for="check-wiki" class="block"><input type="checkbox" name="check-wiki" id="check-wiki" value="check-wiki"> Wiki</label>
+          <label for="check-forum" class="block"><input type="checkbox" name="check-forum" id="check-forum" value="check-forum"> Forum</label>
+          <label for="check-additional-courses" class="block"><input type="checkbox" name="check-additional-courses" id="check-additional-courses" value="check-additional-courses"> Addional Coursee</label>
+        </div>
+
+        <div class="feedbacks-div">
+          <span class="block box">Any comments or suggestions?</span>
+          <textarea class="block full-width" name="feedbacks" id="feedbacks" cols="30" rows="20" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="submit-btn-div">
+          <input class="submit-btn block full-width box" type="submit" value="Submit" id="submit">
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+</body>
+
+</html>

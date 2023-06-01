@@ -1,0 +1,53 @@
+.block {
+  display: block;
+}
+
+.full-width {
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  background: linear-gradient(to bottom right, #4c4973, #282644);
+  color: white;
+}
+
+.container {
+  width: 50%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  font-weight: bolder;
+}
+
+#name-label, #email-label, #number-label, #number-label {
+  /* margin-bottom: 1rem; */
+} 
+
+.form-div {
+  color: white;
+  background-color: #282644;
+  width: 91%;
+  padding: 3em 3em;
+  border-radius: 5px;
+}
+
+.box {
+  margin-top: 1rem;
+}
+
+.submit-btn {
+  background-color: #37af65;
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
